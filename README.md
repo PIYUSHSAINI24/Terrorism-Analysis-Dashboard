@@ -1,105 +1,147 @@
-# Terrorism-Analysis-Dashboard
-##🧠 Terrorism Insights & Analysis Dashboard (Power BI)
-📊 Global & India Terrorism Data Visualization | Interactive Analytics Dashboard
-📌 Project Overview
+# 🧠 Terrorism Insights & Analysis Dashboard (Power BI)
 
-This project focuses on analyzing historical terrorism data using Microsoft Power BI to uncover meaningful insights related to global terrorism trends, high-risk regions, attack patterns, and human impact.
+## 📌 Project Overview
 
-The dashboard is divided into two analytical perspectives:
+This project analyzes historical terrorism data using **Microsoft Power BI** to uncover trends, identify impacted regions, and understand terrorism patterns.  
+It consists of two dashboards:
+- 🌍 **Global Terrorism Dashboard**
+- 🇮🇳 **Terrorism in India Dashboard**
 
-🌍 Global Terrorism Dashboard – Provides a worldwide overview of terrorism incidents
+The goal is to convert raw terrorism data into **interactive, visual, and insightful analytics** for better understanding.
 
-🇮🇳 Terrorism in India Dashboard – Offers a focused and detailed analysis of terrorism within India
+---
 
-The purpose of this project is to convert raw data into interactive, visual, and decision-support insights using modern data analytics techniques.
+## 🎯 Objectives
 
-##🎯 Objectives
+- Analyze global terrorism trends over time  
+- Identify most affected countries and regions  
+- Understand attack types and weapon usage patterns  
+- Evaluate killed, wounded, and casualty distribution  
+- Provide a detailed analysis focused on India  
+- Demonstrate real-world analytics using Power BI  
 
-✔️ Analyze global terrorism trends over time
-✔️ Identify the most affected countries, regions, and hotspots
-✔️ Understand attack patterns, weapon types, and target distribution
-✔️ Evaluate casualties and severity of attacks
-✔️ Provide a focused national-level analysis for India
-✔️ Demonstrate effective use of Power BI for analytical storytelling
+---
 
-##🗂️ Dataset Description
+## 🗂️ Dataset Description
 
-The dataset contains historical terrorism incident records across multiple countries.
+The dataset contains multiple years of terrorism incident records.
 
-Key Columns
-📅 Date, Year, Month
-🌍 Country, Region, State, City
-💣 Attack Type, Weapon Type, Target Type
-🧠 Terrorist Group
-⚠️ Killed, Wounded, Total Casualties (Calculated)
-📍 Latitude & Longitude (for maps)
-Each row represents a single terrorist incident.
+### Key Fields
+- 📅 Date, Year, Month  
+- 🌍 Country, Region, State, City  
+- 💣 Attack Type, Weapon Type, Target Type  
+- 🧠 Terrorist Group  
+- ⚠️ Killed, Wounded, Casualties (Derived)  
+- 📍 Latitude & Longitude  
 
-##🧹 Data Preprocessing
-Performed in Power Query:
-Removed irrelevant and duplicate columns
-Handled missing values
-Standardized categorical values
-Converted data types
-Removed invalid coordinates
-Created calculated fields:
-Casualties = Killed + Wounded
-Extracted Year, Month, Quarter
+Each entry = one terrorism incident.
 
-##🏗️ Data Modeling
-Star Schema implemented for better performance:
-📌 Fact Table
-Fact_Incidents
-📌 Dimension Tables
-Dim_Date
-Dim_Country
-Dim_AttackType
-Dim_TargetType
-Dim_WeaponType
-Dim_Group
+---
 
-Relationships configured as one-to-many with directional filtering.
+## 🧹 Data Preprocessing
 
-#📊 Dashboard Visuals
-##🌍 Global Terrorism Dashboard Includes
+Performed in **Power Query**:
 
-✔ KPI Cards
-✔ Global Heat Map
-✔ Year-wise Trend Line Chart
-✔ Attack Type Donut Chart
-✔ Most Affected Countries Bar Chart
-✔ Interactive Slicers
+- Removed unnecessary / duplicate fields  
+- Handled missing values  
+- Standardized categories  
+- Converted data types  
+- Removed invalid geo-coordinates  
+- Created calculated fields:
+  - `Casualties = Killed + Wounded`
+  - Extracted Year, Month, Quarter  
 
-##🇮🇳 Terrorism in India Dashboard Includes
+---
 
-✔ India-Specific KPI Cards
-✔ India Heat Map
-✔ Year-wise Trend Chart
-✔ Top Affected States / Cities
-✔ Attack Type Distribution
-✔ State & Year Slicers
+## 🏗️ Data Modeling
 
-##🧬 Key Insights
+Star Schema implemented for performance.
 
-Terrorism incidents are regionally concentrated rather than evenly spread
-South Asia & Middle East show significantly high activity
-Armed assaults & bombings are most common attack types
-Few countries contribute to majority of global incident
-In India, certain states consistently appear as hotspots
-Casualties vary significantly by attack type
+### 📌 Fact Table
+- Fact_Incidents
 
-##🛠️ Tech Stack
-Power BI
-Power Query
-DAX
-Data Modeling (Star Schema)
+### 📌 Dimension Tables
+- Dim_Date  
+- Dim_Country  
+- Dim_AttackType  
+- Dim_TargetType  
+- Dim_WeaponType  
+- Dim_Group  
 
-##🚀 Future Scope
-🔄 Real-time terrorism data integration
-🤖 Predictive analytics & forecasting using ML
-🗺️ Advanced geospatial clustering & heat intensity
-📊 Cross-country comparative analysis
-📈 Enhanced interactive features & detailed drilldowns
+Relationships configured as One-to-Many.
 
-##✅ Conclusion
-This project demonstrates how terrorism data can be effectively analyzed using Power BI to produce insightful, interactive dashboards. It not only helps visualize historical terrorism patterns but also supports better situational understanding and potential decision-making for researchers, analysts, and policymakers.
+---
+
+## 📊 Dashboard Features
+
+### 🌍 Global Terrorism Dashboard
+
+
+![Global Terrorism Dashboard](https://github.com/PIYUSHSAINI24/Terrorism-Analysis-Dashboard/blob/main/globalTerrorismDASHBOARD.jpeg)
+
+✔ KPI Cards  
+✔ Global Heat Map  
+✔ Year-wise Trend Line  
+✔ Attack Type Distribution  
+✔ Most Affected Countries  
+✔ Interactive Slicers  
+
+---
+
+### 🇮🇳 Terrorism in India Dashboard
+
+![India Terrorism Dashboard](https://github.com/PIYUSHSAINI24/Terrorism-Analysis-Dashboard/blob/main/indianTerrorismDASHBOARD.jpeg)
+
+✔ India-Specific KPIs  
+✔ India Heat Map  
+✔ Year-wise Trend  
+✔ State / City Analysis  
+✔ Attack Type Distribution  
+✔ Year & State Slicers  
+
+---
+
+## 🧬 Key Insights
+
+- Terrorism is concentrated in specific regions  
+- South Asia & Middle East impacted significantly  
+- Armed assault & bombings most common  
+- Few countries account for majority cases  
+- In India, incidents are regionally concentrated  
+- Casualties vary widely by attack type  
+
+---
+
+## 🛠️ Tech Stack
+
+- Power BI  
+- Power Query  
+- DAX  
+- Data Modeling (Star Schema)
+
+---
+
+## 🚀 Future Scope
+
+- Real-time data integration  
+- Machine learning-based predictions  
+- Advanced geospatial heat clustering  
+- Cross-country comparison analytics  
+- Enhanced drilldown & storytelling features  
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates how terrorism data can be effectively analyzed and visualized using Power BI. The dashboards help in understanding historical trends, regional impacts, and severity insights, supporting better awareness and analytical research.
+
+---
+
+## 🙏 Acknowledgement
+
+Dataset sourced from public terrorism databases and refined for academic use.
+
+
+---
+
+⭐ If you found this project useful, don't forget to star the repository!
